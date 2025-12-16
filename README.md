@@ -1,1 +1,0 @@
-# vae-gan-captioning
