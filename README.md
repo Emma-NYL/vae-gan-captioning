@@ -8,6 +8,13 @@ The model first extracts latent visual representations using a VAE-GAN fusion me
 
 This project demonstrates a multimodal deep learning pipeline integrating computer vision and natural language processing.
 
+## Quick Summary
+
+- Task: Image Captioning  
+- Model: VAE-GAN + Language Model  
+- Dataset: CIFAR-100 (32×32 images)  
+- Result: Test Loss ≈ 1.15, Perplexity ≈ 3.1  
+
 ## Model Design
 
 This project implements a lightweight image captioning model that combines visual representations from a diffusion-based VAE and a GAN discriminator.
