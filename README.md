@@ -128,6 +128,7 @@ Example captions:
 - "a small plate"
 
 These results show that the model is able to map visual features to text, but the generated captions are relatively simple and lack diversity.
+<img width="917" height="276" alt="Screenshot 2026-04-26 at 10 37 53 PM" src="https://github.com/user-attachments/assets/311b46d5-37b5-4464-915b-e98d9d31e1ac" />
 
 ## Training Insights
 
