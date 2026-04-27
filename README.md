@@ -56,6 +56,11 @@ vae-gan-captioning/
 └── README.md
 ```
 
+## Requirements
+
+Python 3.8+  
+PyTorch  
+
 ## How to Run
 
 ### 1. Clone repository
@@ -97,10 +102,10 @@ Generated Caption:
 
 ## My Contribution
 
-* Designed and implemented the **VAE-GAN fusion architecture**
-* Built the end-to-end caption generation pipeline
-* Developed prediction and evaluation scripts
-* Organized the project structure for reproducibility and clarity
+- Designed and implemented the VAE-GAN fusion architecture for visual feature learning  
+- Built the end-to-end image captioning pipeline  
+- Developed prediction and evaluation modules  
+- Organized the repository structure for reproducibility and external review 
 
 ## What I Learned
 
