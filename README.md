@@ -8,6 +8,14 @@ The model first extracts latent visual representations using a VAE-GAN fusion me
 
 This project demonstrates a multimodal deep learning pipeline integrating computer vision and natural language processing.
 
+## Model Design
+
+This project implements a lightweight image captioning model that combines visual representations from a diffusion-based VAE and a GAN discriminator.
+
+The learned visual features are used to guide a simple language model for caption generation.
+
+Since the model was trained on a local machine, the design prioritizes efficiency and lightweight computation rather than state-of-the-art performance.
+
 ## Problem Statement
 
 Image captioning requires understanding visual content and translating it into human-readable text. This is challenging because:
@@ -99,6 +107,37 @@ Generated Caption:
 "A dog running across a grassy field."
 
 (*Example output will be updated with actual results*)
+
+## Example Results
+
+Below are sample input images and generated captions:
+
+- Input images are low-resolution (32×32) samples from the dataset  
+- Generated captions are produced by the trained model  
+
+Example captions:
+- "a small plate"
+- "a small plate"
+- "a small plate"
+
+These results show that the model is able to map visual features to text, but the generated captions are relatively simple and lack diversity.
+
+## Training Insights
+
+### Loss Metrics
+- Test Loss ≈ 1.15  
+- Perplexity ≈ 3.1  
+
+These results suggest that the model has learned a meaningful mapping between visual features and text.
+
+### Observations
+- The model tends to generate repetitive captions (e.g., "a small plate")  
+- This indicates reliance on template-based supervision  
+- Limited caption diversity due to simplified training data  
+
+### Dataset Limitation
+The model was trained on CIFAR-100, which has very low resolution (32×32).  
+This results in loss of fine-grained visual details and makes high-quality caption generation difficult.
 
 ## My Contribution
 
